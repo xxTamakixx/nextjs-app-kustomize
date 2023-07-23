@@ -1,0 +1,12 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: nextjs-app-project
+  namespace: argocd
+spec:
+  description: Next App Project
+  sourceRepos:
+  - '*'
+  destinations:
+  - namespace: default 
+    server: https://kubernetes.default.svc

@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: next-app-application
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+  labels:
+    name: next-app
+spec:
+  project: nextjs-app-project 
+  source:
+    repoURL: https://github.com/xxTamakixx/nextjs-app-kustomize
+    targetRevision: main
+    path: kustomize/overlays/production
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default  
+  syncPolicy:
+    automated: {}
