@@ -1,0 +1,7 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- nextjs-app-black-service.yaml
+- nextjs-app-black.yaml
+- nextjs-app-gateway.yaml
+- nextjs-app-virtual-service.yaml
