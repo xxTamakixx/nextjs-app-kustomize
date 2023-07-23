@@ -3,6 +3,3 @@ kind: Kustomization
 resources:
   - ../../base
 namePrefix: prod-
-replicas:
-- name: deployment
-  count: 1
