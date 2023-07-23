@@ -1,2 +1,2 @@
 # nextjs-app-kustomize
-nextjs-app-kustomize-terraform
+nextjs-app-kustomize
