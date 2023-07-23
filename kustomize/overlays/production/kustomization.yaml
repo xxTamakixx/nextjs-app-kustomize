@@ -5,4 +5,4 @@ resources:
 namePrefix: prod-
 images:
 - name: 119834080691.dkr.ecr.ap-northeast-1.amazonaws.com/black
-  newTag: 9b746e13f3f2037f1403e47ecbdf771b0694d175
+  newTag: af5569f08ae8a9473ad6fcf85932444aa760e6a9
